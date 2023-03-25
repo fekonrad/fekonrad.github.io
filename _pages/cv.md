@@ -21,3 +21,7 @@ Education
 Work experience
 ======
 * Teaching Assistant at OVGU: October 2020, April 2021 - February 2022 and October 2022 - February 2023
+
+Projects 
+====== 
+* ...
