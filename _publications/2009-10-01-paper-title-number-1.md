@@ -1,10 +1,9 @@
 ---
-title: "Paper Title Number 1"
+title: "The tail measure on the space of càdlàg processes"
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
+excerpt: 'This is my bachelor thesis.'
+date: 2023-03-25
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 ---
 My thesis on the tail measure for continuous-time càdlàg processes. It surveys prerequisite material in multivariate extreme value theory (chapter 2), weak convergence of continuous-time stochastic processes (chapter 3) and the results given in the recent [paper of Philippe Soulier](https://arxiv.org/pdf/2004.00325.pdf) (chapter 4). Additionally, we present some applications for regularly varying Markov Processes (chapter 5).   
