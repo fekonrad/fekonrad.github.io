@@ -10,11 +10,11 @@ redirect_from:
 {% include base_path %}
 
 Education
-* M.Sc. in Mathematics, University of Bonn, since April 2023
-* Specializing in Probability Theory and Analysis
 ======
+* M.Sc. in Mathematics, University of Bonn, since April 2023
+** Specializing in Probability Theory and Analysis
 * B.Sc. in Mathematics, Otto-von-Guericke-University Magdeburg, October 2019 - March 2023
-* Final grade: 1.2 (3.8/4.0 GPA)
+** Final grade: 1.2 (3.8/4.0 GPA)
 
 Work experience
 ======
