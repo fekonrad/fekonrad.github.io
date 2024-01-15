@@ -2,6 +2,7 @@
 title: "Implicit Bias in Deep Learning"
 collection: teaching
 permalink: /ML/ImplicitBiasinDL
+excerpt: 'This is my bachelor thesis.'
 date: 2024-09-01
 ---
 
