@@ -8,7 +8,7 @@ date: 2024-09-01
 In many applications of modern Deep Learning, neural networks tend to be heavily overparametrized, meaning the amount of trainable parameters far exceeds the amount of training data. 
 In such overparametrized regimes there tend to be many parameter configurations which lead to a network which perfectly fits (in the case of regression) or perfectly classifies (in the case of classification) the training data. However, not all functions that fit the data are qualitatively the same.
 
-![[[ImplicitBiasPic1.png](https://github.com/fekonrad/fekonrad.github.io/blob/master/files/ImplicitBiasPic1.png)]]
+![Two Functions that fit the Data](https://github.com/fekonrad/fekonrad.github.io/blob/master/files/ImplicitBiasPic1.png)
 
 In the picture above, both functions (blue and orange) fit the data (red points) exactly, but the blue curve clearly has a certain desirable "smoothness" that the yellow curve does not have. 
 
