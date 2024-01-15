@@ -42,10 +42,19 @@ The differential equation in question can take on different forms:
 1. Neural *Ordinary* Differential Equations (NODEs): $y'(t)=f_\theta(t,y(t))dt$ 
 2. Neural *Controlled* Differential Equations (NCDEs): $y'(t)=f_\theta(t,y(t))dx(t)$ for some control path $(x(t))_{t\geq 0}$ 
 3. Neural *Stochastic* Differential Equations (NSDEs): $dy_t=\mu_\theta(t,y_t)dt+\sigma_\theta(t,y_t)dB_t$ for a Brownian Motion $B$
-where in each case, $f_\theta,\mu_\theta,\sigma_\theta$ are neural networks with parameters $\theta$. 
-NCDEs are very similar to NODEs, in the sense that if the control path $(x(t))_{t\geq 0}$ is differentiable, the controlled differential equation reduces to an ordinary differential equation: $$y'(t)=\underbrace{f_\theta(y(t))dx(t)}_{\text{CDE}}=\underbrace{f_\theta(y(t))\cdot x'(t)dt}_{\text{ODE}}.$$Since in most applications, the control path $x$ is only given by finitely many data points $x(t_1),\dots, x(t_k)$, we have some freedom in choosing the continuous-time interpolation $(x(t))_{t\geq 0}$ of these data points. Thus we are able to always choose an interpolation which is continuously differentiable, reducing the CDE to an ODE, allowing us to use one of the many numerical solvers designed for ODEs to solve our CDE. The interpolation that seems to be often chosen, and the one which we will use here as well, is a *cubic spline interpolation*. 
 
-*Solving the ODE (or CDE)* is then done numerically, meaning we obtain a discretized solution $y_0,y_1,\dots,y_k.$ There are various numerical solvers for ODEs, but to give a concrete example one may apply a simple Euler's scheme to the ODE $y'(t)=f_\theta(y(t))dt$ obtaining a sequence $$y_{n+1}=y_n + f_\theta(y_n)\cdot\tau, \hspace{1cm}y_0=y(0)$$ where $\tau$ is a step size chosen in advance. As one might be able to see, this particular numerical scheme essentially makes our neural ODE into a Residual Neural Network (ResNet)!
+where in each case, $f_\theta,\mu_\theta,\sigma_\theta$ are neural networks with parameters $\theta$. 
+NCDEs are very similar to NODEs, in the sense that if the control path $(x(t))_{t\geq 0}$ is differentiable, the controlled differential equation reduces to an ordinary differential equation:
+
+$$y'(t)=\underbrace{f_\theta(y(t))dx(t)}_{\text{CDE}}=\underbrace{f_\theta(y(t))\cdot x'(t)dt}_{\text{ODE}}$$
+
+Since in most applications, the control path $x$ is only given by finitely many data points $x(t_1),\dots, x(t_k)$, we have some freedom in choosing the continuous-time interpolation $(x(t))_{t\geq 0}$ of these data points. Thus we are able to always choose an interpolation which is continuously differentiable, reducing the CDE to an ODE, allowing us to use one of the many numerical solvers designed for ODEs to solve our CDE. The interpolation that seems to be often chosen, and the one which we will use here as well, is a *cubic spline interpolation*. 
+
+*Solving the ODE (or CDE)* is then done numerically, meaning we obtain a discretized solution $y_0,y_1,\dots,y_k.$ There are various numerical solvers for ODEs, but to give a concrete example one may apply a simple Euler's scheme to the ODE $y'(t)=f_\theta(y(t))dt$ obtaining a sequence 
+
+$$y_{n+1}=y_n + f_\theta(y_n)\cdot\tau, \hspace{1cm}y_0=y(0)$$
+
+where $\tau$ is a step size chosen in advance. As one might be able to see, this particular numerical scheme essentially makes our neural ODE into a Residual Neural Network (ResNet)!
 As a consequence, neural ODEs can be seen as a "continuous-time version" of ResNets. However, there are more sophisticated numerical solvers for ODEs, which may then result in an architecture that is not a ResNet. 
 
 The resulting discretized solution $y_0,\dots, y_N$ is then compared to the observations $\hat y_{t_0}, \hat y_{t_1},\dots,\hat y_{t_k}$ via a loss function, e.g. mean squard error.  
