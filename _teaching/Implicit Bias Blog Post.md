@@ -2,7 +2,7 @@
 title: "Implicit Bias in Deep Learning"
 collection: teaching
 permalink: /ML/ImplicitBiasinDL
-excerpt: 'A set of notes attempting to summarize the literature on implicit bias of gradient descent.'
+excerpt: 'A set of [notes](https://fekonrad.github.io/files/Implicit_Bias__Literature_Overview%20(1).pdf) attempting to summarize the literature on implicit bias of gradient descent.'
 date: 2024-09-01
 ---
 
