@@ -16,6 +16,7 @@ In the picture above, both functions (blue and orange) fit the data (red points)
 
 Surprisingly, It turns out that for wide overparametrized networks, gradient descent (and many of its variants) tend to result in surprisingly smooth / regularized functions. This is called the *implicit bias of gradient descent*, as the procedure of optimizing a neural network by gradient descent tends to be "biased" towards particular functions. 
 
-It is an active field of research in ML Theory to establish results of this kind. In these notes (Link)  I try to provide an introduction to the field and summarize parts of this research area. 
+It is an active field of research in ML Theory to establish results of this kind. In [these notes](https://fekonrad.github.io/files/Implicit_Bias__Literature_Overview%20(1).pdf)
+  I try to provide an introduction to the field and summarize parts of this research area. 
 This is still a work in progress and I will continue to update these notes in the future!
 
