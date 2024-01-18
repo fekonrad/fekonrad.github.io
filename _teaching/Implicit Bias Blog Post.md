@@ -6,6 +6,8 @@ excerpt: 'A set of [notes](https://fekonrad.github.io/files/Implicit_Bias__Liter
 date: 2024-09-01
 ---
 
+[**Notes available here**](https://fekonrad.github.io/files/Implicit_Bias__Literature_Overview%20(1).pdf)
+
 In many applications of modern Deep Learning, neural networks tend to be heavily overparametrized, meaning the amount of trainable parameters far exceeds the amount of training data. 
 In such overparametrized regimes there tend to be many parameter configurations which lead to a network which perfectly fits (in the case of regression) or perfectly classifies (in the case of classification) the training data. However, not all functions that fit the data are qualitatively the same.
 
