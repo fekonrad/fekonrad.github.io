@@ -1,10 +1,10 @@
----
-title: "Implicit Bias in Deep Learning"
-collection: teaching
-permalink: /ML/ImplicitBiasinDL
-excerpt: 'A set of [notes](https://fekonrad.github.io/files/Implicit_Bias__Literature_Overview%20(1).pdf) attempting to summarize the literature on implicit bias of gradient descent.'
-date: 2024-09-01
----
+# ---
+# title: "Implicit Bias in Deep Learning"
+# collection: teaching
+# permalink: /ML/ImplicitBiasinDL
+# excerpt: 'A set of [notes](https://fekonrad.github.io/files/Implicit_Bias__Literature_Overview%20(1).pdf) attempting to summarize the literature on implicit bias of gradient descent.'
+# date: 2024-09-01
+# ---
 
 [**Notes available here**](https://fekonrad.github.io/files/Implicit_Bias__Literature_Overview%20(1).pdf)
 
@@ -22,4 +22,5 @@ Surprisingly, It turns out that for wide overparametrized networks, gradient des
 It is an active field of research in ML Theory to establish results of this kind. In [these notes](https://fekonrad.github.io/files/Implicit_Bias__Literature_Overview%20(1).pdf)
   I try to provide an introduction to the field and summarize parts of this research area. 
 This is still a work in progress and I will continue to update these notes in the future!
+
 
