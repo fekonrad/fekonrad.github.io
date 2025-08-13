@@ -1,3 +1,12 @@
+---
+title: "BikeSeek Blog - Training the Embedding Model"
+collection: teaching
+permalink: /ML/BikeSeekModelTraining
+excerpt: 'A Summary of the experiments done to train the embedding model used in the search engine of [bikeseek.org](bikeseek.org)'
+date: 2025-08-13
+---
+
+
 # The Goal 
 According to [Statista](https://de.statista.com/statistik/daten/studie/157410/umfrage/polizeilich-erfasste-faelle-des-diebstahls-von-fahrraedern-seit-1995/), around 250,000 bicycles get reported to the police as stolen every year in Germany alone. Meanwhile as stated in the [press release](https://news.mit.edu/2023/where-do-stolen-bikes-go-0215) of a study conducted by MIT, the Amsterdam Institute for Advanced Metropolitan Solutions and the Delft University of Technology, "A substantial amount \[of stolen bicycles\] appear to get resold". 
 
