@@ -1,9 +1,9 @@
----
-title: "Neural Controlled Differential Equations in Computer Vision"
-collection: teaching
-permalink: /ML/NeuralCDEforCV
-date: 2024-11-01
----
+# ---
+# title: "Neural Controlled Differential Equations in Computer Vision"
+# collection: teaching
+# permalink: /ML/NeuralCDEforCV
+# date: 2024-11-01
+# ---
 
 **Note: This blog is still in progress. Some later parts are not yet finished.**
 
