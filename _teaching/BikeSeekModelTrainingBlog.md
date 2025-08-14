@@ -95,6 +95,9 @@ Now that we have our loss function we can take a look at a few results of finetu
 3. **ViT-L-14:** 
    The ViT-L-14 not only has an even smaller patch size of $14\times 14$, but the base model itself is also much larger, having $24$ Transformer layers compared to the $12$ layers that the ViT-B-x models have (the ViT-L model also has more attention heads per layer and a larger hidden dimension). Training with this larger model gave some additional improvements, already getting $\text{Recall@}10=44.8\%$ after the first epoch of training. However, at this point we can see that switching to a larger model gives marginal returns and the computational requirements for this model are too large to run it on a moderate CPU in real time. Thus we ultimately decided to stick with the ViT-B-16 model.   
 
+Finally, here are some sample search results for two queries using the embeddings provided by the finetuned ViT-B-16 model:
+![Column 1: Two Query Images; Columns 2-6: The Top-5 search results, i.e. the images whose embeddings are closest to the embedding of the given query image.](/images/Screenshot 2025-08-14 102727.png)
+
 In short, we have a model (ViT-B-16) that get's a $\text{Recall@}10$ of approximately 65% while still being performant enough to run on a moderate CPU (t3.medium) in real time. 
 The main bottlenecks to achieving better retrieval metrics very likely are a mixture of: 
 1. The training dataset being too small
