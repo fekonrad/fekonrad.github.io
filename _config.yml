@@ -8,6 +8,7 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Felix Konrad"
+site_theme               : default
 title_separator          : "-"
 name                     : &name "Felix Konrad"
 description              : &description "maths student"
